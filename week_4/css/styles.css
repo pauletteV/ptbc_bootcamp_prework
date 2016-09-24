@@ -15,13 +15,13 @@ header, footer {
 }
 
 footer {
-	position: absolute;
+	/*position: absolute;*/
 	bottom: 0px;
 }
 
 #content {
 	width: 100%;
-	height: 600px;
+	height: 800px;
 }
 
 nav {
@@ -33,7 +33,7 @@ nav {
 .center {
 	width: 1000px;
 	margin: auto;
-	min-width: 800px
+	min-width: 400px
 }
 
 #header-content {
@@ -60,12 +60,14 @@ nav a:hover, footer a:hover {
 
 footer h3 {
 	color: #b3cccc;
+	padding-top: 10px;
 }
 
 /***** home page ******/
 
-#home-images-row {
-	margin-top: 30px;
+.home-images-row {
+	margin: 30px auto;
+	width: 80%;
 }
 
 img.home-images {
@@ -74,13 +76,23 @@ img.home-images {
 	border: 10px solid #fff;
 	-webkit-filter: opacity(75%);
 	filter: opacity(75%);
+	width: 30%;
 
 }
 
 /***** about page *****/
 
-#about-section h2, #about-section p, #about-section ol {
+.about h2, .about p, .about ol {
 	color: #00334d;	
+}
+
+#about-main a:link, #about-main a:visited {
+	text-decoration: none;
+	color: #00334d;
+}
+
+#about-main, #about-sub {
+	width: 100%;
 }
 
 /***** contact page ****/
